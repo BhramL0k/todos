@@ -1,0 +1,32 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header>
+  <h1>{{title}}</h1>
+</header>
+
+
+<div class="container">
+  <div class="header">
+    <h1>{{input}}</h1>
+    <input type="text" #data placeholder="Input your tast please">
+    <button (click)="add(data)">Add a new value</button>
+  </div>
+  <div class="list">
+    <ul class="todo-list">
+      <li *ngFor="let data of datas">{{data}}<span class="close" (click)="delete(data)">     
+        <i class="fa fa-close"></i>
+
+      </span></li>
+    </ul>
+  </div>
+  </div>
+
+
+<footer>
+  <h1>Size : {{len}}</h1>
+</footer>
+
+
+
